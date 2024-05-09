@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Table</title>
+</head>
+<body>
+    <header>
+        <h1>
+            HTML Table
+        </h1>
+    </header>
+    <table>
+       <style>
+        table{
+           
+           height: 100px;
+           width: 200px;
+           border: 2px solid red;
+           border-collapse: collapse;
+        }
+        th,td{text-align: center;
+            border: 2px solid red;
+         
+        }
+       </style>
+        <colgroup>
+            <col span="3" style="background-color: chartreuse;">
+        </colgroup>
+        <caption>STUDENT INFORMATION</caption>
+        <thead>
+            <tr>
+                <th scope="col">NAME</th>
+                <th scope="col">ID</th>
+                <th scope="col">SECTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">ARNAB</td>
+                <td scope="row">221-115-068</td>
+                <td scope="row">B</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
